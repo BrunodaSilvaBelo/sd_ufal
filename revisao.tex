@@ -19,17 +19,21 @@
 
 \section{Introdução}
 \label{sec:intro}
-Em aplicações webs, cada parte da aplicação é divididas em DOM (document object
-model), e sua navegação é feita através de eventos, \emph{listener}, destes DOM.
-Assim para testar tais aplicações é necessário simular uma interação humana com
-a página, um jeito simples de fazer isto é utilizando a forma padrão para
-navegá-la, assim carregando a aplicação via \emph{html} e algum outro programa
-para fazer a sequência de interação com ela. Porém este jeito a uma desvantagem,
-ela carregará tudo da aplicação, assim parte dela que não é usada na sequência é
-carregado desnecessariamente, logo ocupando espaço de memória e tempo de
-processamento que será inútil, pois eles não serão usado. Assim a proposta do
-artigo é alcançar um modo otimizado para executar estas sequência a qual só será
-carregado e usado aquilo que realmente é preciso para executar tal interação.
+A maioria dos sistemas web não faz uso de uma arquitetura baseada em serviços, 
+ou seja, eles não disponibilizam uma API. Esse fato dificulta a integração e consumo 
+de dados entre sistemas diferentes.
+Uma forma de contornar esse problema é fazer uso de um sistema de automação web, onde
+uma sequência de navegação é definida com o objetivo de realizar alguma tarefa que
+normalmente seria executada manualmente, como baixar o extrato bancário, por exemplo.  
+Uma outra aplicação para a automação web são os testes de sistemas web, que são feitos
+em muitos casos de forma manual, comprometendo a sua eficiência e robustez.
+Eficiência é o nome do grande desafio dos sistemas e ferramentas de automação web 
+uma vez que fazem uso das APIs dos navegadores convencionais, que além de consumirem 
+uma grande quantidade de recursos (memória e processador), não são desenvolvidos
+para esse tipo de propósito.
+A proposta do artigo é melhorar a performance da automação web, ou seja, 
+alcançar um modo otimizado para executar sequências de navegação, utilizando um navegador
+próprio e um conjunto de algoritmos inovadores.
 \section{Contribuição}
 \label{sec:contrib}
 Os autores criaram um navegador próprio cujo nome é exp-IE e é baseado no
