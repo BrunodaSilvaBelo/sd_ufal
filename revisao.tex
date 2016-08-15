@@ -19,27 +19,28 @@
 
 \section{Introdução}
 \label{sec:intro}
-A maioria dos sistemas web não faz uso de uma arquitetura baseada em serviços, 
-ou seja, eles não disponibilizam uma API, dificultando a integração e consumo 
+A maioria dos sistemas web não faz uso de uma arquitetura baseada em serviços,
+ou seja, eles não disponibilizam uma API, dificultando a integração e consumo
 de dados entre sistemas diferentes.
 
-Uma forma de contornar esse problema é fazer uso de uma ferramenta de automação web, 
-onde uma sequência de navegação é definida com o objetivo de realizar alguma tarefa que
-normalmente seria executada de forma manual, como por exemplo, baixar um extrato 
-bancário ou realizar teste em um sistema web.
+Uma forma de contornar esse problema é fazer uso de uma ferramenta de automação
+web, onde uma sequência de navegação é definida com o objetivo de realizar
+alguma tarefa que normalmente seria executada de forma manual, como por exemplo,
+baixar um extrato bancário ou realizar teste num sistema web.
 
-As ferramentas atuais de automação web usam APIs de navegadores convencionais, 
-que por sua vez não são pensados para essa finalidade e terminam compromentendo 
+As ferramentas atuais de automação web usam APIs de navegadores convencionais,
+que por sua vez não são pensados para essa finalidade e terminam comprometendo
 a eficiência, gerando um alto consumo de recursos (processador e memória).
 
-A proposta do artigo é alcançar um modo otimizado para executar sequências de navegação, 
-utilizando um navegador próprio e um conjunto de algoritmos inovadores.
+A proposta do artigo é alcançar um modo otimizado para executar sequências de
+navegação, utilizando um navegador próprio e um conjunto de algoritmos
+inovadores.
 \section{Contribuição}
 \label{sec:contrib}
 Os autores criaram um navegador próprio cujo nome é exp-IE e é baseado no
-Microsoft Internet Explorer,  para poder otimizar a sequência de navegação, isto
+Microsoft Internet Explorer, para poder otimizar a sequência de navegação, isto
 é, como um arquivo \emph{html} é representado como uma árvore nos browser, eles
-conseguiram fazer com que dado um ação em um nó da árvore quais outros nós ou
+conseguiram fazer com que dado um ação num nó da árvore quais outros nós ou
 sub-árvores são relevante ou irrelevante para tal sequência de ações, assim
 estes nós nem seriam baixados e carregados, mas aqueles sim.
 
@@ -48,7 +49,7 @@ eles foram feito voltado para humanos, eles utilizam muito recursos do
 computador, assim a criação de um próprio é uma boa abordagem, como é mostrado
 no artigo a qual o exp-IE otimizado chegou a ser 6x mais rápido que estes outros
 navegadores e é mostrado que além de melhoria de performance existe também
-diminuição do uso de memória .
+diminuição do uso de memória.
 \section{Discussão}
 \label{sec:discussao}
 O artigo\cite{art:main} é consideravelmente simples de ler, não possui muitos
